@@ -59,7 +59,7 @@
             text-shadow: 0 0 20px rgba(251, 191, 36, 0.3);
         }
         
-        /* Correção para garantir que a barra fixa fique acima de tudo */
+        /* Barra fixa no topo */
         #top-bar {
             position: fixed;
             top: 0;
@@ -235,13 +235,22 @@
 
     <footer class="bg-black py-12 border-t border-white/10 text-center">
         <div class="max-w-4xl mx-auto px-4 space-y-6">
+            
+            <p class="text-gray-600 text-[10px] leading-relaxed max-w-2xl mx-auto">
+                <strong>Aviso Legal:</strong> Este produto não garante a obtenção de resultados. Qualquer referência ao desempenho de uma estratégia não deve ser interpretada como uma garantia de resultados. O sucesso depende exclusivamente da dedicação, do estudo e da aplicação correta das técnicas por parte do aluno. O conteúdo tem caráter educacional.
+            </p>
+
             <p class="text-gray-400 text-sm font-semibold">
                 Copyright © 2026 Dr. Reginaldo Oliveira<br>
-                <span class="text-gray-600 font-normal text-xs">Todos os direitos reservados.</span>
+                <span class="text-gray-600 font-normal text-xs">OAB/SC 57.879 • Todos os direitos reservados.</span>
             </p>
-            <div class="flex justify-center gap-6 text-xs text-gray-500 font-mono uppercase pt-4 w-fit mx-auto">
+
+            <div class="flex flex-wrap justify-center gap-4 md:gap-6 text-xs text-gray-500 font-mono uppercase pt-4 border-t border-gray-900 w-fit mx-auto">
+                <a href="termos.html" target="_blank" class="hover:text-white transition-colors">Termos de Uso</a>
+                <a href="politicas.html" target="_blank" class="hover:text-white transition-colors">Política de Privacidade</a>
+                
                 <a href="https://wa.me/5571996510966" target="_blank" class="hover:text-gold-premium transition-colors flex items-center gap-1">
-                    <i data-lucide="message-circle" class="w-3 h-3"></i> Suporte
+                    <i data-lucide="message-circle" class="w-3 h-3"></i> Suporte / Parcerias
                 </a>
             </div>
         </div>
@@ -268,7 +277,8 @@
             { name: "Adv. Ricardo S.", init: "RS" },
             { name: "Dr. Paulo (Médico)", init: "DP" },
             { name: "Carlos V.", init: "CV" },
-            { name: "Advocacia Silva", init: "AS" }
+            { name: "Advocacia Silva", init: "AS" },
+            { name: "Dra. Fernanda L.", init: "FL" }
         ];
 
         function showNotification() {
